@@ -1,0 +1,93 @@
+<html>
+
+<head>
+<title>Welcome: Registration</title>
+</head>
+
+<body>
+
+<h1>New Registration</h1>
+
+<table>
+
+<tr>
+<td><b>Email</b></td>
+<td> <input type="text" name="email" > </td>
+</tr>
+
+<tr>
+<td><b>Password</b></td>
+<td> <input type="password" name="password" > </td>
+</tr>
+
+<tr>
+<td><b>Gender</b></td>
+<td>
+<input type="radio" name="gender_male" value="male"> Male
+<input type="radio" name="gender_female" value="female"> Female
+</td>
+</tr>
+
+<tr>
+<td><b>Interest in Subjects</b></td>
+<td>
+<input type="checkbox" name="subject_SQA" value="SQA"> SQA
+<input type="checkbox" name="subject_BigData" value="BigData"> BigData 
+<input type="checkbox" name="subject_DevOps" value="DevOps"> DevOps 
+</td>
+</tr>
+
+<tr>
+<td><b>Select your Location</b></td>
+<td>
+ <select id = "myLocation">
+               <option value = "1">Karachi</option>
+               <option value = "2">Lahore</option>
+               <option value = "3">Islamabad</option>
+               <option value = "4">Peshawar</option>
+             </select>
+</td>
+</tr>
+
+<tr>
+<td><b>Select available time slot</b></td>
+<td>
+<select multiple id = "timeSlot">
+               <option value = "11"> 11:00 AM-1:00 PM </option>
+               <option value = "12"> 3:00PM - 6:00 PM </option>
+               <option value = "13"> 7:00PM - 10:00PM </option>
+             </select>
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td><button id = "register" onclick="getElementById('demo1').innerHTML='Registration Successfully'"><b>Register</b></button> 
+<button id = "cancel"><b>Cancel</b></button></td>
+</tr>
+
+<tr>
+<p id="demo" onclick="myFunction()">Fill registration information</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.color = "red";
+
+}
+</script>
+</tr>
+
+<tr>
+<td><b>Help Links</b></td>
+<td>
+<b><p>Check out <a href="https://en.wikipedia.org/wiki/Fox_Glacier">Help</a>!</p></b>
+<p id="demo1"></p>
+
+</td>
+</tr>
+
+</table>
+
+</body>
+
+</html>
